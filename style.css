@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Merienda', sans-serif;
+    line-height: 1.55;
+    color: #303030;
+    background-color: #eee7db;
+    font-weight: 200;
+}
+
+h1{
+    color: #E6ADB0;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+}
+h2{
+    color: #303030;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3{
+    color: #de4645;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 60px 0;
+    letter-spacing: 1.6px;
+}
+h4{
+    color: #FBF9F1;
+    font-size: 32px;
+    font-weight: 700;
+    width: 400px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    color: #de4645;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 0;
+    letter-spacing: 1.6px;
+}
+.container{
+    width: 65%;
+    margin: 0 auto;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #de4645;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #de4645;
+    transition: .5s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+
+#main-header{
+    padding: 21.5rem 0;
+    text-align: center;
+    align-items: center;
+    background-image: url(henry-co-liBJwUowFnw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.btn{
+    font-weight: 400;
+    color: #303030;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 1px;
+    padding: 5px 40px;
+}
+.btn:hover{
+    color: #E6ADB0;
+    background-color: #303030;
+    letter-spacing: 0.8em;
+}
+
+#o-restaurante{
+    padding: 14rem 0;
+}
+
+.coll2{
+    columns: 2;
+    column-gap: 40px;
+}
+p.pequeno{
+    padding: 40px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#separador1{
+    padding: 200px;
+    height: 700px;
+    background-image: url(spacedezert-B-TXhdhNtOQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#separador2{
+    padding: 200px;
+    height: 700px;
+    background-image: url(samuel-foster-LxD9fZYR2uw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#ementa{
+    padding: 5rem 0;
+}
+
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.galeria{
+    margin: 100px auto 50px;
+}
+#img-galeria{
+    height: 225px;
+    width: 400px;
+    object-fit: cover;
+}
+.btn_ementa{
+    font-weight: 400;
+    color: #303030;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 1px;
+    padding: 5px 40px;
+}
+.btn_ementa:hover{
+    color: #E6ADB0;
+    background-color: #303030;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+form{
+    width: 100%;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 850px;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #303030;
+    border-radius: 10px;
+    color: #303030;
+    background-color: transparent;
+    font-size: 17px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    color: #303030;
+    cursor: text;
+    transition: 0.3s;
+}
+button{
+    padding: 10px 0;
+    color: #303030;
+    outline: none;
+    background: transparent;
+    border: 1px solid #303030;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+button:hover{
+    color:#eee7db;
+    background-color: #303030;
+}
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, 
+textarea:valid~label{
+    top: -29px;
+    font-size: 14px;
+}
+#informacoes{
+    width: 90%;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+footer{
+    margin-top: 80px;
+    background-color: #111;
+    color: #FBF9F1;
+}
+.footerContainer{
+    width: 100%;
+    padding: 30px 10px;
+}
+.socialIcons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:20px;
+    margin: 10px;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #eee7db;
+}
+.socialIcons a:hover i{
+    color: #E6ADB0;
+    transition: 0.8s;
+}
+.footerBottom{
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+}
+.footerBottom p{
+    font-size: 12px;
+    color: #FBF9F1;
+    font-weight: 300;
+}
+
+.estabelecimento {
+    margin: 10px;
+    padding: 20px;
+    flex: 0 0 30%;
+    box-sizing: border-box;
+}
+.estabelecimento p {
+    margin: 5px 0;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.btn_localizacao{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    color: #303030;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 1px;
+    padding: 5px 40px;
+}
+.btn_localizacao:hover{
+    color: #E6ADB0;
+    background-color: #303030;
+}
